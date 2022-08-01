@@ -5,6 +5,11 @@ import clients from "../assets/clients"
 const breakpoints = {
 	// 700px and up
 	100: {
+		itemsToShow: 1,
+		snapAlign: 'start',
+	},
+	// 700px and up
+	500: {
 		itemsToShow: 2,
 		snapAlign: 'start',
 	},
@@ -48,7 +53,7 @@ const breakpoints = {
 </template>
 
 <style>
-#projects_slider .carousel__prev, #projects_slider .carousel__next {
+#projects_slider .carousel__prev, #projects_slider .carousel__next, #projects_slider .carousel__pagination-button--active {
 	background-color: #0083b0;
 }
 
