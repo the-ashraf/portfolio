@@ -4,9 +4,9 @@ import ProjectsSlider from '../components/ProjectsSlider.vue';
 </script>
 <template>
 	<SiteHeader>
-		<div class="grid grid-cols-2 gap-4 p-10">
-			<div class="">
-				<div class="pt-20">
+		<div class="grid md:grid-cols-2 gap-4 p-10">
+			<div class="order-2 md:order-1">
+				<div class="md:pt-20">
 					<div class="inline-block font-bold bg-black/20 pr-2 rounded-md">
 						<span class="text-lg">👋</span> Hello,
 					</div>
@@ -16,22 +16,22 @@ import ProjectsSlider from '../components/ProjectsSlider.vue';
 						a full-stack developer from Cairo, Egypt.
 					</div>
 					<div class="space-x-4 pt-16 tracking-wide">
-						<a class="btn inline-block border-2 border-[#0083B0] font-bold bg-[#0083B0] text-white text-sm rounded-md inline-block py-2 px-3 hover:bg-black/25" href="/">My Work</a>
-						<a class="btn inline-block border-2 border-white/50 font-bold text-white text-sm rounded-md inline-block py-2 px-3 hover:bg-white/20" href="#">Contact Me</a>
+						<a class="btn inline-block border-2 border-[#0083B0] font-bold bg-[#0083B0] text-white text-sm rounded-md inline-block py-2 px-3 hover:bg-black/25" href="#projects">My Work</a>
+						<a class="btn inline-block border-2 border-white/50 font-bold text-white text-sm rounded-md inline-block py-2 px-3 hover:bg-white/20" href="#contact">Contact Me</a>
 					</div>
 				</div>
 			</div>
 
 
-			<div class="relative">
-				<div class="w-full h-full absolute -top-10">
-					<img class="" src="../assets/hero_illustration.svg" alt="">
+			<div class="relative order-1 md:order-2">
+				<div class="w-full h-60 md:h-full md:absolute md:-top-10">
+					<img class="w-full h-full object-top object-cover md:w-auto md:h-auto md:object-fill" src="../assets/hero_illustration.svg" alt="">
 				</div>
 			</div>
 		</div>
 	</SiteHeader>
 
-	<div class="max-w-6xl mx-auto px-6 my-8 space-y-4">
+	<div id="projects" class="max-w-6xl mx-auto px-6 my-8 space-y-4">
 		<h1 class="px-4 text-lg font-bold text-[#0083B0]">My Favorite Projects</h1>
 
 		<ProjectsSlider />

@@ -3,9 +3,9 @@ import SiteHeader from "../../components/SiteHeader.vue"
 </script>
 <template>
 	<SiteHeader>
-		<div class="grid grid-cols-2 gap-4 p-10">
-			<div class="">
-				<div class="pt-20">
+		<div class="grid md:grid-cols-2 gap-4 p-10">
+			<div class="order-2 md:order-1">
+				<div class="md:pt-20">
 					<!--this very page is built using vue3 and tailwind-->
 					<div class="font-cursive text-4xl tracking-wider py-8">
 						Jammr.<br>
@@ -16,9 +16,9 @@ import SiteHeader from "../../components/SiteHeader.vue"
 			</div>
 
 
-			<div class="relative">
-				<div class="w-full h-full absolute -top-10">
-					<img class="" src="/public/clients/jammr.png" alt="Screenshot from Jammr">
+			<div class="relative order-1 md:order-2">
+				<div class="w-full h-60 md:h-full md:w-full md:absolute md:-top-10">
+					<img class="w-full h-full object-cover object-top md:w-auto md:h-auto md:rounded-t-md" src="/clients/jammr.png" alt="Screenshot from Jammr">
 				</div>
 			</div>
 		</div>
@@ -54,9 +54,9 @@ import SiteHeader from "../../components/SiteHeader.vue"
 
 			<div class="relative">
 				<div class="w-full h-full">
-					<img class="block" src="/public/clients/jammr/jammr_home.png" alt="Screenshot from Jammr's homepage">
+					<img class="block" src="/clients/jammr/jammr_home.png" alt="Screenshot from Jammr's homepage">
 
-					<img class="block" src="/public/clients/jammr/jammr_track.png" alt="Screenshot from Jammr's track page">
+					<img class="block" src="/clients/jammr/jammr_track.png" alt="Screenshot from Jammr's track page">
 				</div>
 			</div>
 		</div>

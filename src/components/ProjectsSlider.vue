@@ -1,9 +1,24 @@
 <script setup>
 import {Carousel, Navigation, Pagination, Slide} from 'vue3-carousel';
-import clients from "../assets/clients"</script>
+import clients from "../assets/clients"
+
+const breakpoints = {
+	// 700px and up
+	100: {
+		itemsToShow: 2,
+		snapAlign: 'start',
+	},
+	// 1024 and up
+	1024: {
+		itemsToShow: 3,
+		snapAlign: 'start',
+	},
+};
+
+</script>
 
 <template>
-	<carousel id="projects_slider" :items-to-show="3" :wrapAround="true" class="text-xs" snapAlign="start">
+	<carousel id="projects_slider" :breakpoints='breakpoints' :wrapAround="true" class="text-xs">
 		<slide v-for="client in clients" :key="client.name" class="">
 			<div class="w-full flex flex-col flex-1 px-4">
 				<div class="flex flex-col flex-1 border border-blue-300 overflow-hidden rounded-md">
