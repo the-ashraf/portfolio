@@ -1,6 +1,17 @@
 <script setup>
-import SiteHeader from "../../components/SiteHeader.vue"
+import {ref} from "vue";
+import ImagesModal from "../../components/ImagesModal.vue";
+import SiteHeader from "../../components/SiteHeader.vue";
+
+const showModal = ref(false);
+const currentImage = ref('');
+
+const handleClick = (event) => {
+	currentImage.value = event.target.currentSrc;
+	showModal.value = true;
+}
 </script>
+
 <template>
 	<SiteHeader>
 		<div class="grid md:grid-cols-2 gap-4 p-10">
@@ -31,8 +42,8 @@ import SiteHeader from "../../components/SiteHeader.vue"
 			<div class="py-3 px-4 border rounded-md border-gray-300 font-bold text-center">AlpineJs</div>
 		</div>
 
-		<div class="grid grid-cols-2 gap-4">
-			<div class="space-y-4">
+		<div class="grid grid-cols-4 gap-4">
+			<div class="col-span-3 space-y-4">
 				<ul class="list-inside space-y-2">
 					<li class="pl-2 border-l-2">A very fun project that i worked on from start to finish, TVShowSeeker used an external api source to seed information about tv shows.</li>
 					<li class="pl-2 border-l-2">i used Cronjobs to ensure continues seeding to make sure the local database is never out of date.</li>
@@ -58,14 +69,18 @@ import SiteHeader from "../../components/SiteHeader.vue"
 
 
 			<div class="relative">
-				<div class="w-full h-full space-y-2">
-					<img class="block" src="/clients/seeker/seeker_show.png" alt="Screenshot from TVShowSeeker's show page">
+				<div class="w-full h-full space-y-4">
+					<img @click.prevent="handleClick($event)" class="block rounded-md border cursor-pointer" src="/clients/seeker/seeker_show.png" alt="Screenshot from TVShowSeeker's show page">
 
-					<img class="block" src="/clients/seeker/seeker_related_tags.png" alt="Screenshot from TVShowSeeker's related section">
+					<img @click.prevent="handleClick($event)" class="block rounded-md border cursor-pointer" src="/clients/seeker/seeker_related_tags.png" alt="Screenshot from TVShowSeeker's related section">
 
-					<img class="block" src="/clients/seeker/seeker_episodes.png" alt="Screenshot from TVShowSeeker's episodes section">
+					<img @click.prevent="handleClick($event)" class="block rounded-md border cursor-pointer" src="/clients/seeker/seeker_episodes.png" alt="Screenshot from TVShowSeeker's episodes section">
 				</div>
 			</div>
 		</div>
 	</main>
+
+	<ImagesModal v-model="showModal">
+		<img class="block w-full h-full object-cover" :src="currentImage" alt="Screenshot from TVShowSeeker's show page">
+	</ImagesModal>
 </template>

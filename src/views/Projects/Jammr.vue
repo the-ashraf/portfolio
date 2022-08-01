@@ -1,5 +1,15 @@
 <script setup>
-import SiteHeader from "../../components/SiteHeader.vue"
+import {ref} from "vue";
+import ImagesModal from "../../components/ImagesModal.vue";
+import SiteHeader from "../../components/SiteHeader.vue";
+
+const showModal = ref(false);
+const currentImage = ref('');
+
+const handleClick = (event) => {
+	currentImage.value = event.target.currentSrc;
+	showModal.value = true;
+}
 </script>
 <template>
 	<SiteHeader>
@@ -31,8 +41,8 @@ import SiteHeader from "../../components/SiteHeader.vue"
 			<div class="py-3 px-4 border rounded-md border-gray-300 font-bold text-center">AlpineJs</div>
 		</div>
 
-		<div class="grid grid-cols-2 gap-4">
-			<div class="space-y-4">
+		<div class="grid grid-cols-4 gap-4">
+			<div class="col-span-3 space-y-4">
 				<ul class="list-inside space-y-2">
 					<li class="pl-2 border-l-2">Jammr is a unique concept that allows musicians to upload their own music for others to listen and remix.</li>
 					<li class="pl-2 border-l-2">The infrastructure was built to allow an artist to either upload an entire complete song or to upload the individual tracks that makes a song, which allows other artists to use specific instruments in their mixes or to remix the entire song.</li>
@@ -54,11 +64,15 @@ import SiteHeader from "../../components/SiteHeader.vue"
 
 			<div class="relative">
 				<div class="w-full h-full">
-					<img class="block" src="/clients/jammr/jammr_home.png" alt="Screenshot from Jammr's homepage">
+					<img @click.prevent="handleClick($event)" class="block rounded-md border cursor-pointer" src="/clients/jammr/jammr_home.png" alt="Screenshot from Jammr's homepage">
 
-					<img class="block" src="/clients/jammr/jammr_track.png" alt="Screenshot from Jammr's track page">
+					<img @click.prevent="handleClick($event)" class="block rounded-md border cursor-pointer" src="/clients/jammr/jammr_track.png" alt="Screenshot from Jammr's track page">
 				</div>
 			</div>
 		</div>
 	</main>
+
+	<ImagesModal v-model="showModal">
+		<img class="block w-full h-full object-cover" :src="currentImage" alt="Screenshot from TVShowSeeker's show page">
+	</ImagesModal>
 </template>

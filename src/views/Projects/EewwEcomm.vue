@@ -1,5 +1,15 @@
 <script setup>
-import SiteHeader from "../../components/SiteHeader.vue"
+import {ref} from "vue";
+import ImagesModal from "../../components/ImagesModal.vue";
+import SiteHeader from "../../components/SiteHeader.vue";
+
+const showModal = ref(false);
+const currentImage = ref('');
+
+const handleClick = (event) => {
+	currentImage.value = event.target.currentSrc;
+	showModal.value = true;
+}
 </script>
 <template>
 	<SiteHeader>
@@ -31,8 +41,8 @@ import SiteHeader from "../../components/SiteHeader.vue"
 			<div class="py-3 px-4 border rounded-md border-gray-300 font-bold text-center">Livewire</div>
 		</div>
 
-		<div class="grid grid-cols-2 gap-4">
-			<div class="space-y-4">
+		<div class="grid grid-cols-4 gap-4">
+			<div class="col-span-3 space-y-4">
 				<ul class="list-inside space-y-2">
 					<li class="pl-2 border-l-2">Built specifically to suite almost all types of products, can be customized to add any amount of categories and products</li>
 					<li class="pl-2 border-l-2">Admin panel built with Livewire to allow for rapid filtration and fast access</li>
@@ -55,14 +65,18 @@ import SiteHeader from "../../components/SiteHeader.vue"
 
 
 			<div class="relative">
-				<div class="w-full h-full space-y-2">
-					<img class="block" src="/clients/ecomm/ecomm_admin.png" alt="Screenshot from ecomm's admin page">
+				<div class="w-full h-full space-y-4">
+					<img @click.prevent="handleClick($event)" class="block rounded-md border cursor-pointer" src="/clients/ecomm/ecomm_admin.png" alt="Screenshot from ecomm's admin page">
 
-					<img class="block" src="/clients/ecomm/ecomm_roles.png" alt="Screenshot from ecomm's roles section">
+					<img @click.prevent="handleClick($event)" class="block rounded-md border cursor-pointer" src="/clients/ecomm/ecomm_roles.png" alt="Screenshot from ecomm's roles section">
 
-					<img class="block" src="/clients/ecomm/ecomm_stats.png" alt="Screenshot from ecomm's stats section">
+					<img @click.prevent="handleClick($event)" class="block rounded-md border cursor-pointer" src="/clients/ecomm/ecomm_stats.png" alt="Screenshot from ecomm's stats section">
 				</div>
 			</div>
 		</div>
 	</main>
+
+	<ImagesModal v-model="showModal">
+		<img class="block w-full h-full object-cover" :src="currentImage" alt="Screenshot from TVShowSeeker's show page">
+	</ImagesModal>
 </template>

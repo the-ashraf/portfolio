@@ -1,5 +1,15 @@
 <script setup>
-import SiteHeader from "../../components/SiteHeader.vue"
+import {ref} from "vue";
+import ImagesModal from "../../components/ImagesModal.vue";
+import SiteHeader from "../../components/SiteHeader.vue";
+
+const showModal = ref(false);
+const currentImage = ref('');
+
+const handleClick = (event) => {
+	currentImage.value = event.target.currentSrc;
+	showModal.value = true;
+}
 </script>
 <template>
 	<SiteHeader>
@@ -31,8 +41,8 @@ import SiteHeader from "../../components/SiteHeader.vue"
 			<div class="py-3 px-4 border rounded-md border-gray-300 font-bold text-center">Cloudinary</div>
 		</div>
 
-		<div class="grid grid-cols-2 gap-4">
-			<div class="space-y-4">
+		<div class="grid grid-cols-4 gap-4">
+			<div class="col-span-3 space-y-4">
 				<ul class="list-inside space-y-2">
 					<li class="pl-2 border-l-2">The idea of this app is to have an accurate directory to track everything related to the Cairo Symphony.</li>
 					<li class="pl-2 border-l-2">Users are able to follow performers and conductors and specific musical works so they get notifications when it is being performed in future concerts.</li>
@@ -55,12 +65,16 @@ import SiteHeader from "../../components/SiteHeader.vue"
 
 
 			<div class="relative">
-				<div class="w-full h-full space-y-2">
-					<img class="block" src="/clients/csg/csg_calendar.png" alt="Screenshot from cairo symphony guide's calendar section">
+				<div class="w-full h-full space-y-4">
+					<img @click.prevent="handleClick($event)" class="block rounded-md border cursor-pointer" src="/clients/csg/csg_calendar.png" alt="Screenshot from cairo symphony guide's calendar section">
 
-					<img class="block" src="/clients/csg/csg_concert.png" alt="Screenshot from cairo symphony guide's concert section">
+					<img @click.prevent="handleClick($event)" class="block rounded-md border cursor-pointer" src="/clients/csg/csg_concert.png" alt="Screenshot from cairo symphony guide's concert section">
 				</div>
 			</div>
 		</div>
 	</main>
+
+	<ImagesModal v-model="showModal">
+		<img class="block w-full h-full object-cover" :src="currentImage" alt="Screenshot from TVShowSeeker's show page">
+	</ImagesModal>
 </template>
