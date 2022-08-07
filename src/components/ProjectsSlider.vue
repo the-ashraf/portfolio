@@ -1,6 +1,6 @@
 <script setup>
 import {Carousel, Navigation, Pagination, Slide} from 'vue3-carousel';
-import clients from "../assets/clients"
+import clients from "../assets/projects.json"
 
 const breakpoints = {
 	// 700px and up
@@ -28,7 +28,7 @@ const breakpoints = {
 			<div class="w-full flex flex-col flex-1 px-4">
 				<div class="flex flex-col flex-1 border border-blue-300 overflow-hidden rounded-md">
 					<div class="w-full h-48">
-						<img :alt="client.name" :src="client.image" class="block w-full h-full object-top object-cover">
+						<img :alt="client.name" :src="client.featured_image" class="block w-full h-full object-top object-cover">
 					</div>
 					<div class="flex-1 p-4 space-y-4">
 						<h5 class="font-bold text-lg font-cursive text-[#0083b0] pl-2 border-l-4 border-[#0083b0]">{{ client.name }}</h5>

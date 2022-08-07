@@ -19,47 +19,47 @@ const routes = [
 	},
 	{
 		path: "/projects/tvshowseeker",
-		name: "TvShowSeeker",
+		name: "tvshowseeker",
 		component: TvShowSeeker,
 	},
 	{
 		path: "/projects/cairo-symphony-guide",
-		name: "CairoSymphonyGuide",
+		name: "cairo-symphony-guide",
 		component: CairoSymphonyGuide,
 	},
 	{
 		path: "/projects/jammr",
-		name: "Jammr",
+		name: "jammr",
 		component: Jammr,
 	},
 	{
 		path: "/projects/eeww-ecomm",
-		name: "EewwEcomm",
+		name: "eeww-ecomm",
 		component: EewwEcomm,
 	},
 	{
 		path: "/projects/ezz-egypt",
-		name: "EzzEgypt",
+		name: "ezz-egypt",
 		component: EzzEgypt,
 	},
 	{
 		path: "/projects/game-case",
-		name: "GameCase",
+		name: "game-case",
 		component: GameCase,
 	},
 	{
 		path: "/projects/a-ezz-accountants",
-		name: "AEzzAccountants",
+		name: "a-ezz-accountants",
 		component: AEzzAccountants,
 	},
 	{
 		path: "/projects/itap",
-		name: "Itap",
+		name: "itap",
 		component: Itap,
 	},
 	{
 		path: "/projects/al-nour",
-		name: "AlNour",
+		name: "al-nour",
 		component: AlNour,
 	},
 ];

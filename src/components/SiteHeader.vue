@@ -1,6 +1,6 @@
 <template>
 	<header class="bg-gradient-to-br from-[#00B4DB] to-[#0083B0] text-white overflow-hidden">
-		<div class="max-w-6xl mx-auto ">
+		<div class="max-w-6xl mx-auto">
 			<div class="flex justify-between px-8 pt-10">
 				<div class="h-10 w-10 rounded-full overflow-hidden">
 					<a href="/">
