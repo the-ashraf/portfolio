@@ -8,7 +8,7 @@ module.exports = {
 		extend: {
 			fontFamily: {
 				'cursive': ['Carter One', 'cursive'],
-				'display': ['Open Sans', 'sans-serif'],
+				'display': ['Poppins', 'sans-serif'],
 			}
 		},
 	},

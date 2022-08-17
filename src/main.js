@@ -1,6 +1,6 @@
 import {createApp} from 'vue'
 import router from './router'
-import './styles.css'
+import './styles.scss'
 import 'vue3-carousel/dist/carousel.css';
 import App from './App.vue'
 

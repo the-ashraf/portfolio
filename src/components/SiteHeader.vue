@@ -1,14 +1,15 @@
 <template>
-	<header class="bg-gradient-to-br from-[#00B4DB] to-[#0083B0] text-white overflow-hidden">
-		<div class="max-w-6xl mx-auto">
-			<div class="flex justify-between px-8 pt-10">
+	<header class="overflow-hidden relative hero">
+		<div class="container px-4 py-8 mx-auto h-full">
+			<div class="flex justify-between">
 				<div class="h-10 w-10 rounded-full overflow-hidden">
 					<a href="/">
-						<img class="h-full w-full object-cover" src="../assets/avatar.png" alt="Ashraf's Profile Picture">
+						<img alt="Ashraf's Profile Picture" class="h-full w-full object-cover"
+						     src="../assets/avatar.png">
 					</a>
 				</div>
 
-				<nav>
+				<nav class="text-[#dcf6fd]">
 					<router-link :to="{ name: 'Home' }">Home</router-link>
 				</nav>
 			</div>
