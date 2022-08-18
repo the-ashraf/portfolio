@@ -86,8 +86,8 @@ const links = computed(() => {
 	</SiteHeader>
 
 	<main class="max-w-6xl mx-auto pt-10 space-y-6 px-8 mb-10">
-		<div class="grid grid-cols-4 gap-4">
-			<div class="col-span-3 space-y-4">
+		<div class="grid md:grid-cols-4 gap-4">
+			<div class="order-2 md:order-1 md:col-span-3 space-y-4">
 				<ul class="list-inside space-y-2.5">
 					<li v-for="detail in project.details" :key="detail" class="pl-2 border-l-4 border-[#0083B0]/50 first-letter:uppercase">
 						{{ detail }}
@@ -105,13 +105,11 @@ const links = computed(() => {
 			</div>
 
 
-			<div class="relative">
-				<div class="w-full h-full space-y-4">
-					<img v-for="image in project.screenshots" :key="image"
-					     :alt="'Screenshot from ' + project.name" :src="image"
-					     class="block rounded-md border cursor-pointer"
-					     @click.prevent="handleClick($event)">
-				</div>
+			<div class="order-1 md:order-2 flex md:flex-col space-x-4 md:space-x-0 md:space-y-4">
+				<img v-for="image in project.screenshots" :key="image"
+				     :alt="'Screenshot from ' + project.name" :src="image"
+				     class="block w-20 h-20 md:w-full md:h-32 rounded-md border cursor-pointer object-cover object-top ring-2 ring-blue-200 hover:ring-blue-600 rounded-md ring-offset-2"
+				     @click.prevent="handleClick($event)">
 			</div>
 		</div>
 	</main>
