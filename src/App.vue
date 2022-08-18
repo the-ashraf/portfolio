@@ -2,7 +2,7 @@
 </script>
 
 <template>
-	<div class="mb-10">
+	<div class="">
 		<router-view />
 	</div>
 </template>

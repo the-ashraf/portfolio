@@ -1,48 +1,51 @@
 <script setup>
 import SiteHeader from "../components/SiteHeader.vue"
 import ProjectsSlider from '../components/ProjectsSlider.vue';
+
+function scrollToElement(elementId) {
+	const element = document.getElementById(elementId);
+
+
+
+	element.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+}
+
 </script>
 <template>
 	<SiteHeader>
-		<div class="grid grid-cols-12 text-[#dcf6fd] h-full mt-auto">
-			<div class="col-span-8 flex items-center">
-				<div class="space-y-8">
-					<div class="inline-flex gap-2 items-center py-1 px-3 bg-black/20 rounded-md shadow">
-						<svg class="w-4 h-4 text-amber-400" viewBox="0 0 24 24">
-							<path
-								d="M7.03 4.95 3.5 8.5c-3.33 3.31-3.33 8.69 0 12s8.69 3.33 12 0l6-6c1-.97 1-2.56 0-3.54-.1-.12-.23-.23-.37-.32l.37-.39c1-.97 1-2.56 0-3.54-.14-.16-.33-.3-.5-.41.38-.92.21-2.02-.54-2.77-.87-.87-2.22-.96-3.2-.28a2.517 2.517 0 0 0-3.88-.42l-2.51 2.51c-.09-.14-.2-.27-.32-.39a2.53 2.53 0 0 0-3.52 0m1.41 1.42c.2-.2.51-.2.71 0s.2.51 0 .71l-3.18 3.18a3 3 0 0 1 0 4.24l1.41 1.41a5.004 5.004 0 0 0 1.12-5.36l6.3-6.3c.2-.2.51-.2.7 0s.21.51 0 .71l-4.59 4.6 1.41 1.41 6.01-6.01c.2-.2.51-.2.71 0 .2.2.2.51 0 .71l-6.01 6.01 1.41 1.41 4.95-4.95c.2-.2.51-.2.71 0 .2.2.2.51 0 .71l-5.66 5.65 1.41 1.42 3.54-3.54c.2-.2.51-.2.71 0 .2.2.2.51 0 .71l-6 6.01c-2.54 2.54-6.65 2.54-9.19 0s-2.54-6.65 0-9.19l3.53-3.54M23 17c0 3.31-2.69 6-6 6v-1.5c2.5 0 4.5-2 4.5-4.5H23M1 7c0-3.31 2.69-6 6-6v1.5c-2.5 0-4.5 2-4.5 4.5H1Z"
-								fill="currentColor"/>
-						</svg>
-						<span>Hello</span>
-					</div>
-					<!--this very page is built using vue3 and tailwind-->
-					<div class="text-5xl font-bold leading-[1.3]">
-						I'm Ashraf, <br>
-						a full-stack developer <br>
-						from Cairo, Egypt.
-					</div>
-					<p class="font-light leading-[2]">
-						With about 15 years of experience, a good amount of projects built, deployed and maintained <br>
-						lets build something together.
-					</p>
-					<div class="space-x-4 tracking-wide">
-						<a class="btn btn-secondary"
-						   href="#projects">My Work</a>
-						<a class="btn btn-primary"
-						   href="#contact">Contact Me</a>
-					</div>
-				</div>
+		<div class="space-y-8">
+			<div class="inline-flex gap-2 items-center py-1 px-3 bg-black/20 rounded-md shadow">
+				<svg class="w-4 h-4 text-amber-400" viewBox="0 0 24 24">
+					<path
+						d="M7.03 4.95 3.5 8.5c-3.33 3.31-3.33 8.69 0 12s8.69 3.33 12 0l6-6c1-.97 1-2.56 0-3.54-.1-.12-.23-.23-.37-.32l.37-.39c1-.97 1-2.56 0-3.54-.14-.16-.33-.3-.5-.41.38-.92.21-2.02-.54-2.77-.87-.87-2.22-.96-3.2-.28a2.517 2.517 0 0 0-3.88-.42l-2.51 2.51c-.09-.14-.2-.27-.32-.39a2.53 2.53 0 0 0-3.52 0m1.41 1.42c.2-.2.51-.2.71 0s.2.51 0 .71l-3.18 3.18a3 3 0 0 1 0 4.24l1.41 1.41a5.004 5.004 0 0 0 1.12-5.36l6.3-6.3c.2-.2.51-.2.7 0s.21.51 0 .71l-4.59 4.6 1.41 1.41 6.01-6.01c.2-.2.51-.2.71 0 .2.2.2.51 0 .71l-6.01 6.01 1.41 1.41 4.95-4.95c.2-.2.51-.2.71 0 .2.2.2.51 0 .71l-5.66 5.65 1.41 1.42 3.54-3.54c.2-.2.51-.2.71 0 .2.2.2.51 0 .71l-6 6.01c-2.54 2.54-6.65 2.54-9.19 0s-2.54-6.65 0-9.19l3.53-3.54M23 17c0 3.31-2.69 6-6 6v-1.5c2.5 0 4.5-2 4.5-4.5H23M1 7c0-3.31 2.69-6 6-6v1.5c-2.5 0-4.5 2-4.5 4.5H1Z"
+						fill="currentColor"/>
+				</svg>
+				<span>Hello</span>
 			</div>
-
-
-			<div class="col-span-4 flex items-center">
-				<div class="w-full">
-					<img alt=""
-					     class="w-full h-full object-cover block"
-					     src="../assets/hero.svg">
-				</div>
+			<!--this very page is built using vue3 and tailwind-->
+			<div class="text-5xl font-bold leading-[1.3]">
+				I'm Ashraf, <br>
+				a full-stack developer <br>
+				from Cairo, Egypt.
+			</div>
+			<p class="font-light leading-[2]">
+				With about 15 years of experience, a good amount of projects built, deployed and maintained <br>
+				lets build something together.
+			</p>
+			<div class="space-x-4 tracking-wide">
+				<a class="btn btn-secondary"
+				   href="#projects" @click.prevent="scrollToElement('projects')">My Work</a>
+				<a class="btn btn-primary"
+				   href="#contact" @click.prevent="scrollToElement('contact')">Contact Me</a>
 			</div>
 		</div>
+
+
+		<template #img>
+			<img alt="Illustration of a computer and code"
+			     class="w-full h-full max-w-sm md:max-w-full md:w-full md:h-auto object-cover block"
+			     src="../assets/hero.svg">
+		</template>
 	</SiteHeader>
 
 	<div id="projects" class="container px-4 py-8 mx-auto space-y-4">
@@ -55,7 +58,8 @@ import ProjectsSlider from '../components/ProjectsSlider.vue';
 		<div class="container px-4 py-8 mx-auto space-y-4">
 			<h4 class="text-lg font-bold text-[#0083B0]">I'd love to hear from you, here are my contacts</h4>
 			<div class="space-x-4 flex">
-				<a class="hover:text-[#0083B0] hover:scale-125 transition-all duration-300"
+				<a class="text-[#004f9f] hover:text-[#0083B0] hover:scale-125 transition-all duration-300"
+				   title="Send me an e-mail"
 				   href="mailto:a.ezzat88@gmail.com?Subject=Something%20about%20an%20application">
 					<svg aria-hidden="true" class="h-8 w-8" role="img" viewBox="0 0 24 24">
 						<path
@@ -64,7 +68,18 @@ import ProjectsSlider from '../components/ProjectsSlider.vue';
 					</svg>
 				</a>
 
+				<a class="text-[#25d366] hover:text-[#0083B0] hover:scale-125 transition-all duration-300"
+				   title="Find me on WhatsApp"
+				   href="https://wa.me/+201008520909">
+					<svg class="w-8 h-8" role="img" viewBox="0 0 24 24">
+						<path
+							d="M19.05 4.91A9.816 9.816 0 0 0 12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01zm-7.01 15.24c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.264 8.264 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24 2.2 0 4.27.86 5.82 2.42a8.183 8.183 0 0 1 2.41 5.83c.02 4.54-3.68 8.23-8.22 8.23zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.78.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43s.17-.25.25-.41c.08-.17.04-.31-.02-.43s-.56-1.34-.76-1.84c-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.14-1.18s-.22-.16-.47-.28z"
+							fill="currentColor"/>
+					</svg>
+				</a>
+
 				<a class="text-[#006AFF] hover:text-[#0083B0] hover:scale-125 transition-all duration-300"
+				   title="Find me on Messenger"
 				   href="https://m.me/the.ashraf">
 					<svg aria-hidden="true" class="h-8 w-8" role="img" viewBox="0 0 24 24">
 						<path
@@ -74,6 +89,7 @@ import ProjectsSlider from '../components/ProjectsSlider.vue';
 				</a>
 
 				<a class="text-[#00acee] hover:text-[#0083B0] hover:scale-125 transition-all duration-300"
+				   title="Find me on Twitter"
 				   href="https://twitter.com/The__Ashraf">
 					<svg aria-hidden="true" class="h-8 w-8" role="img" viewBox="0 0 24 24">
 						<path
@@ -82,7 +98,7 @@ import ProjectsSlider from '../components/ProjectsSlider.vue';
 					</svg>
 				</a>
 			</div>
-			<p class="font-light leading-[2] w-1/3">
+			<p class="font-light leading-[2] md:w-1/3">
 				Contact me to get a quote, know more about a website idea you have, improvements to your existing website or even to know what TV show i'm currently watching.
 			</p>
 		</div>

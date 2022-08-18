@@ -45,52 +45,47 @@ const links = computed(() => {
 
 <template>
 	<SiteHeader>
-		<div class="grid md:grid-cols-2 gap-4 p-10">
-			<div class="order-2 md:order-1">
-				<div class="md:pt-20">
-					<!--this very page is built using vue3 and tailwind-->
-					<div class="py-10">
-						<div class="font-cursive text-4xl tracking-wider">
-							<h1 class="mb-1">{{ project.name }}</h1>
-							{{ project.tag_line }}
-						</div>
-						<div class="flex gap-2 mt-4">
-							<span v-for="tech in project.tech_used" :key="tech"
-							      class="bg-white rounded-full text-[#0083B0] px-3 py-1 text-xs uppercase font-bold">
-								{{ tech }}
-							</span>
-						</div>
-					</div>
-
-					<div class="flex text-xs text-white">
-						<a class="btn block bg-[#0083B0] rounded-l-md py-2 px-3 hover:bg-black/25"
-						   :href="'/projects/' + links.prev">
-							Previous
-						</a>
-
-						<a class="btn border-x border-black/5 block bg-[#0083B0] py-2 px-3 hover:bg-black/25"
-						   href="/">Back to all projects</a>
-
-						<a class="btn block bg-[#0083B0] rounded-r-md py-2 px-3 hover:bg-black/25"
-						   :href="'/projects/' + links.next">
-							Next
-						</a>
-					</div>
+		<div class="space-y-8">
+			<div class="">
+				<div class="text-5xl font-bold leading-[1.3]">
+					{{ project.name }}
 				</div>
+				<p class="font-light leading-[2]">
+					{{ project.tag_line }}
+				</p>
 			</div>
 
+			<div class="flex justify-center md:justify-start gap-2">
+				<span v-for="tech in project.tech_used" :key="tech"
+				      class="bg-white rounded-full text-[#0083B0] px-3 py-1 text-xs uppercase font-bold">
+					{{ tech }}
+				</span>
+			</div>
 
-			<div class="relative order-1 md:order-2">
-				<div class="w-full h-60 md:h-full md:absolute md:-top-10">
-					<img :alt="'Featured screenshot from ' + project.name"
-					     :src="project.featured_image"
-					     class="w-full h-full object-cover object-top md:w-auto md:h-auto md:rounded-t-md">
-				</div>
+			<div class="flex justify-center md:justify-start text-xs text-white">
+				<a class="btn btn-primary leading-none rounded-r-none rounded-l"
+				   :href="'/projects/' + links.prev">
+					Previous
+				</a>
+
+				<a class="btn btn-primary leading-none rounded-none"
+				   href="/">Back to all projects</a>
+
+				<a class="btn btn-primary leading-none rounded-l-none rounded-r"
+				   :href="'/projects/' + links.next">
+					Next
+				</a>
 			</div>
 		</div>
+
+		<template #img>
+			<img :alt="'Featured screenshot from ' + project.name"
+			     class="max-w-sm md:max-w-full md:h-full aspect-square md:aspect-video object-cover object-top block rounded-md mb-8 md:mb-0"
+			     :src="project.featured_image">
+		</template>
 	</SiteHeader>
 
-	<main class="max-w-6xl mx-auto pt-10 space-y-6 px-8">
+	<main class="max-w-6xl mx-auto pt-10 space-y-6 px-8 mb-10">
 		<div class="grid grid-cols-4 gap-4">
 			<div class="col-span-3 space-y-4">
 				<ul class="list-inside space-y-2.5">
@@ -100,7 +95,7 @@ const links = computed(() => {
 				</ul>
 
 				<div>
-					other features include...
+					Other features include...
 					<ul class="list-inside list-disc">
 						<li v-for="feature in project.other_features" :key="feature">{{ feature }}</li>
 					</ul>
