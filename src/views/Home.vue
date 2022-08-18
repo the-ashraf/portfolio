@@ -103,7 +103,7 @@ function scrollToElement(elementId) {
 					</p>
 				</div>
 				<div class="">
-					<form name="contact-us" class="space-y-2" action="thanks" method="post" data-netlify="true"
+					<form name="contact-us" class="space-y-2" action="thank-you" method="post" data-netlify="true"
 					      data-netlify-honeypot="bot-field" enctype="application/x-www-form-urlencoded">
 						<div class="grid grid-cols-2 gap-4">
 							<div class="relative">
