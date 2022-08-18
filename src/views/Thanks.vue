@@ -1,0 +1,25 @@
+<script setup>
+import SiteHeader from "../components/SiteHeader.vue"
+import SiteFooter from "../components/SiteFooter.vue"
+</script>
+<template>
+	<SiteHeader class="min-h-screen">
+		<div class="space-y-16 mt-16 md:ml-32">
+			<div class="">
+				<H1 class="font-bold text-5xl">Thank you</H1>
+				<p class="font-light leading-[2]">I will make sure to get to you as soon as possible.</p>
+			</div>
+
+
+			<main>
+				<router-link class="btn btn-secondary" :to="{ name: 'Home' }">Get back to the projects page.</router-link>
+			</main>
+
+			<SiteFooter />
+		</div>
+
+		<template #img>
+			<svg class="h-32 w-32 text-green-600" viewBox="0 0 24 24"><path fill="currentColor" d="m12.7 14.05 5.65-5.65-1.4-1.45-4.25 4.25-2.15-2.1-1.4 1.4ZM8 18q-.825 0-1.412-.587Q6 16.825 6 16V4q0-.825.588-1.413Q7.175 2 8 2h12q.825 0 1.413.587Q22 3.175 22 4v12q0 .825-.587 1.413Q20.825 18 20 18Zm0-2h12V4H8v12Zm-4 6q-.825 0-1.412-.587Q2 20.825 2 20V6h2v14h14v2ZM8 4v12V4Z"/></svg>
+		</template>
+	</SiteHeader>
+</template>

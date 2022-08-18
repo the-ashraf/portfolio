@@ -4,6 +4,7 @@ import {useRouter, useRoute} from 'vue-router'
 import projects from "../assets/projects.json"
 import ImagesModal from "./ImagesModal.vue";
 import SiteHeader from "./SiteHeader.vue";
+import SiteFooter from "./SiteFooter.vue";
 
 const route = useRoute();
 const project = ref([]);
@@ -112,6 +113,8 @@ const links = computed(() => {
 				     @click.prevent="handleClick($event)">
 			</div>
 		</div>
+
+		<SiteFooter />
 	</main>
 
 	<ImagesModal v-model="showModal">
