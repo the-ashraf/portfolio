@@ -44,8 +44,8 @@ import ProjectsSlider from '../components/ProjectsSlider.vue';
 		</div>
 	</SiteHeader>
 
-	<div id="projects" class="max-w-6xl mx-auto px-6 my-8 space-y-4">
-		<h1 class="px-4 text-lg font-bold text-[#0083B0]">My Favorite Projects</h1>
+	<div id="projects" class="container px-4 py-8 mx-auto space-y-4">
+		<h1 class="text-lg font-bold text-[#0083B0]">My Favorite Projects</h1>
 
 		<ProjectsSlider/>
 	</div>

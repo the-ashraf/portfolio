@@ -1,38 +1,30 @@
 <script setup>
-import {Carousel, Navigation, Pagination, Slide} from 'vue3-carousel';
+import {Navigation, Pagination, Scrollbar} from 'swiper';
+import {Swiper, SwiperSlide} from 'swiper/vue';
 import clients from "../assets/projects.json"
+import 'swiper/scss';
+import 'swiper/scss/navigation';
+import 'swiper/scss/pagination';
 
-const breakpoints = {
-	// 700px and up
-	100: {
-		itemsToShow: 1,
-		snapAlign: 'start',
-	},
-	// 700px and up
-	500: {
-		itemsToShow: 2,
-		snapAlign: 'start',
-	},
-	// 1024 and up
-	1024: {
-		itemsToShow: 3,
-		snapAlign: 'start',
-	},
-};
+let modules = [Navigation, Pagination, Scrollbar];
 
 </script>
 
 <template>
-	<carousel id="projects_slider" :breakpoints='breakpoints' :wrapAround="true">
-		<slide v-for="client in clients" :key="client.name" class="">
-			<div class="w-full flex flex-col flex-1 px-4 bg-white">
+	<Swiper id="projects_slider" :modules="modules" :pagination="{ clickable: true }" :slides-per-view="4"
+	        :space-between="32"
+	        navigation>
+		<SwiperSlide v-for="client in clients" :key="client.name" class="">
+			<div class="w-full h-full flex flex-col flex-1 bg-white overflow-hidden">
 				<div class="flex flex-col flex-1 border border-[#485b73] overflow-hidden rounded-md">
 					<div class="w-full h-48">
-						<img :alt="client.name" :src="client.featured_image" class="block w-full h-full object-top object-cover">
+						<img :alt="client.name" :src="client.featured_image"
+						     class="block w-full h-full object-top object-cover">
 					</div>
 					<div class="flex-1 p-4 space-y-4">
-						<h5 class="font-bold text-lg font-cursive text-[#485b73] pl-2 border-l-4 border-[#485b73]">{{ client.name }}</h5>
-						<p class="text-sm text-[#485b73]">{{ client.description }}</p>
+						<h5 class="font-bold text-lg font-cursive text-[#485b73] pl-2 border-l-4 border-[#485b73]">
+							{{ client.name }}</h5>
+						<p class="text-sm text-[#485b73] min-h-[3ch]">{{ client.description }}</p>
 					</div>
 					<div class="p-4">
 						<a
@@ -43,33 +35,38 @@ const breakpoints = {
 					</div>
 				</div>
 			</div>
-		</slide>
-
-		<template #addons>
-			<navigation/>
-			<pagination/>
-		</template>
-	</carousel>
+		</SwiperSlide>
+	</Swiper>
 </template>
 
 <style lang="scss">
-#projects_slider {
-	.carousel {
-		text-align: left;
+@at-root {
+	:root {
+		--swiper-pagination-bullet-size: 12px;
+		--swiper-theme-color: #485b73;
 	}
+}
 
-	.carousel__slide {
-		align-items: flex-start;
-		flex-direction: column;
-		text-align: left;
-	}
+.swiper-slide {
+	height: auto;
+	align-self: stretch;
+}
 
-	.carousel__pagination-button {
-		background-color: #ffe9bf;
-	}
+.swiper-button-prev, .swiper-button-next {
+	padding: 75px 30px;
+	top: 12%;
+	//transform: translateY(-50%);
+	color: #ffffff;
+	background-color: rgba(0, 0, 0, 0.35);
+}
 
-	.carousel__prev, .carousel__next, .carousel__pagination-button--active {
-		background-color: #f9bf3b;
-	}
+.swiper-button-next, .swiper-rtl .swiper-button-prev {
+	right: 0;
+	left: auto;
+}
+
+.swiper-button-prev, .swiper-rtl .swiper-button-next {
+	left: 0;
+	right: auto;
 }
 </style>
