@@ -14,14 +14,14 @@ let modules = [Navigation, Pagination, Scrollbar];
 	<Swiper id="projects_slider" :modules="modules" :pagination="{ clickable: true }" :slides-per-view="4"
 	        :space-between="32"
 	        navigation>
-		<SwiperSlide v-for="client in clients" :key="client.name" class="">
+		<SwiperSlide v-for="client in clients" :key="client.name" class="group">
 			<div class="w-full h-full flex flex-col flex-1 bg-white overflow-hidden">
 				<div class="flex flex-col flex-1 border border-[#485b73] overflow-hidden rounded-md">
 					<div class="w-full h-48">
 						<img :alt="client.name" :src="client.featured_image"
 						     class="block w-full h-full object-top object-cover">
 					</div>
-					<div class="flex-1 p-4 space-y-4">
+					<div class="flex-1 p-4 space-y-4 transition-transform duration-300 group-hover:scale-105">
 						<h5 class="font-bold text-lg font-cursive text-[#485b73] pl-2 border-l-4 border-[#485b73]">
 							{{ client.name }}</h5>
 						<p class="text-sm text-[#485b73] min-h-[3ch]">{{ client.description }}</p>
