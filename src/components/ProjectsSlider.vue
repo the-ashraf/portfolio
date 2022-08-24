@@ -83,6 +83,10 @@ let breakpoints = {
 	background-color: rgba(0, 0, 0, 0.35);
 }
 
+.swiper-button-prev.swiper-button-disabled, .swiper-button-next.swiper-button-disabled {
+	display: none;
+}
+
 .swiper-button-next, .swiper-rtl .swiper-button-prev {
 	right: 0;
 	left: auto;

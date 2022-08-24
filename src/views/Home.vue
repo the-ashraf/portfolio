@@ -54,8 +54,8 @@ function scrollToElement(elementId) {
 
 	<div id="contact" class="bg-gradient-to-b from-gray-200 to-white">
 		<div class="container px-4 py-8 mx-auto">
-			<div class="grid grid-cols-2 gap-4">
-				<div class="space-y-4">
+			<div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+				<div class="space-y-4 md:col-span-2">
 					<h4 class="text-lg font-bold text-[#0083B0]">I'd love to hear from you, here are my contacts</h4>
 					<div class="space-x-4 flex">
 						<a class="text-[#004f9f] hover:text-[#0083B0] hover:scale-125 transition-all duration-300"
@@ -106,7 +106,7 @@ function scrollToElement(elementId) {
 					<form name="contact-us" class="space-y-2" action="thanks" method="post" data-netlify="true"
 					      data-netlify-honeypot="bot-field" enctype="application/x-www-form-urlencoded">
 						<input type="hidden" name="form-name" value="contact-us"/>
-						<div class="grid grid-cols-2 gap-4">
+						<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
 							<div class="relative">
 								<label for="name" class="text-sm text-gray-500">Name</label>
 								<input type="text" id="name" name="port-name" class="w-full bg-gray-50 bg-opacity-50 rounded border border-gray-300 focus:border-blue-500 focus:bg-white focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-700 py-1 px-3 transition-colors duration-200 ease-in-out">
