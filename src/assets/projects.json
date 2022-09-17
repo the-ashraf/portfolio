@@ -12,8 +12,8 @@
 		"slug": "tvshowseeker",
 		"tech_used": [
 			"Laravel",
-			"Livewire",
-			"AlpineJs"
+			"Vue 3",
+			"Tailwind"
 		],
 		"details": [
 			"A very fun project that i worked on from start to finish, TVShowSeeker used an external api source to seed information about tv shows.",
@@ -136,7 +136,8 @@
 		"slug": "ezz-egypt",
 		"tech_used": [
 			"Laravel",
-			"VueJs"
+			"VueJs",
+			"Tailwind"
 		],
 		"details": [
 			"App allows factories and shops and service sellers to offer their products to individuals and businesses.",
@@ -241,7 +242,7 @@
 		"tech_used": [
 			"VueJs",
 			"Vue Router",
-			"Tailwind"
+			"Bootstrap"
 		],
 		"details": [
 			"Built to be deployed on any html host to avoid renting an entire server",
