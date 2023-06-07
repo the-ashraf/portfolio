@@ -46,7 +46,7 @@ function scrollToElement(elementId) {
 		</template>
 	</SiteHeader>
 
-	<div id="projects" class="container px-4 py-8 mx-auto space-y-4">
+	<div id="projects" class="container px-4 pt-8 pb-16 mx-auto space-y-4">
 		<h1 class="text-lg font-bold text-[#0083B0]">My Favorite Projects</h1>
 
 		<ProjectsSlider/>
@@ -54,7 +54,7 @@ function scrollToElement(elementId) {
 
 	<div id="contact" class="bg-gradient-to-b from-gray-200 to-white">
 		<div class="container px-4 py-8 mx-auto">
-			<div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+			<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
 				<div class="space-y-4 md:col-span-2">
 					<h4 class="text-lg font-bold text-[#0083B0]">I'd love to hear from you, here are my contacts</h4>
 					<div class="space-x-4 flex">
