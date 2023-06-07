@@ -13,15 +13,16 @@
 		"tech_used": [
 			"Laravel",
 			"Vue 3",
-			"Tailwind"
+			"Tailwind",
+			"Redis"
 		],
 		"details": [
 			"A very fun project that i worked on from start to finish, TVShowSeeker used an external api source to seed information about tv shows.",
-			"i used Cronjobs to ensure continues seeding to make sure the local database is never out of date.",
-			"users can follow their favorite shows and through an algorithm i determine their missed episodes and present it in an organized queue.",
-			"to ensure the app is always fast i implemented a background queue worker to constantly check the users episodes queue.",
-			"latest iteration of frontend updates included separating the desktop and the mobile layout, to make sure the browsing experience is optimal and streamlined regardless of the platform.",
-			"latest iteration of the frontend updates followed the progressive web app specifications to make sure the website is installable through browsers."
+			"I used a laravel custom console command along with a cronjob to ensure continues seeding to make sure the local database is never out of date.",
+			"Users can follow their favorite shows and through an algorithm i determine their missed episodes and present it in an organized queue.",
+			"To ensure the app is always fast i implemented a background queue worker to constantly check the users episodes queue, and then cache it using Redis.",
+			"Latest iteration of frontend updates included separating the desktop and the mobile layout, to make sure the browsing experience is optimal and streamlined regardless of the platform.",
+			"Latest iteration of the frontend updates followed the progressive web app specifications to make sure the website is installable through browsers."
 		],
 		"other_features": [
 			"Recommended tv shows",

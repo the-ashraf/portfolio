@@ -89,7 +89,7 @@ const links = computed(() => {
 	<main class="max-w-6xl mx-auto pt-10 space-y-6 px-8 mb-10">
 		<div class="grid md:grid-cols-4 gap-4">
 			<div class="order-2 md:order-1 md:col-span-3 space-y-4">
-				<ul class="list-inside space-y-2.5">
+				<ul class="list-inside space-y-4">
 					<li v-for="detail in project.details" :key="detail" class="pl-2 border-l-4 border-[#0083B0]/50 first-letter:uppercase">
 						{{ detail }}
 					</li>
