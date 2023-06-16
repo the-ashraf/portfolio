@@ -1,259 +1,303 @@
 [
-	{
-		"name": "TVShowSeeker",
-		"tag_line": "A massive Laravel/Vue/Redis project.",
-		"description": "A complete backend/frontend build, a web app built using Laravel/VueJs/Redis, fully responsive and based on an api",
-		"featured_image": "/clients/seeker/seek.png",
-		"screenshots": [
-			"/clients/seeker/seeker_show.png",
-			"/clients/seeker/seeker_related_tags.png",
-			"/clients/seeker/seeker_episodes.png"
-		],
-		"slug": "tvshowseeker",
-		"tech_used": [
-			"Laravel",
-			"Vue 3",
-			"Tailwind",
-			"Redis"
-		],
-		"details": [
-			"A very fun project that i worked on from start to finish, TVShowSeeker used an external api source to seed information about tv shows.",
-			"I used a laravel custom console command along with a cronjob to ensure continues seeding to make sure the local database is never out of date.",
-			"Users can follow their favorite shows and through an algorithm i determine their missed episodes and present it in an organized queue.",
-			"To ensure the app is always fast i implemented a background queue worker to constantly check the users episodes queue, and then cache it using Redis.",
-			"Latest iteration of frontend updates included separating the desktop and the mobile layout, to make sure the browsing experience is optimal and streamlined regardless of the platform.",
-			"Latest iteration of the frontend updates followed the progressive web app specifications to make sure the website is installable through browsers."
-		],
-		"other_features": [
-			"Recommended tv shows",
-			"Watched episodes time tracker",
-			"Episodes calendar",
-			"New seasons notifications",
-			"Custom collage background images generated from the users own favorite tv show posters."
-		],
-		"note": "Ever since the app launch back in 2016, it went through a major backend upgrade and 2 minor style upgrades. All carried out by me."
-	},
-	{
-		"name": "Cairo Symphony Guide",
-		"tag_line": "The definitive directory for all things Cairo Symphony.",
-		"description": "Separate frontend and backends, a VueJs app using a Laravel backend api. implemented an image upload system using an external service for maximum optimization",
-		"featured_image": "/clients/csg/csg.png",
-		"screenshots": [
-			"/clients/csg/csg_calendar.png",
-			"/clients/csg/csg_concert.png"
-		],
-		"slug": "cairo-symphony-guide",
-		"tech_used": [
-			"Laravel",
-			"VueJs",
-			"Cloudinary"
-		],
-		"details": [
-			"The idea of this app is to have an accurate directory to track everything related to the Cairo Symphony.",
-			"Users are able to follow performers and conductors and specific musical works so they get notifications when it is being performed in future concerts.",
-			"The app has an integration with the Cloudinary Api which makes uploading poster/profile images very optimized.",
-			"The app includes a complete list of every concert that was performed in the last few years. along with all related information.",
-			"The app makes it very easy to generate analysis and stats regarding what was performed when and who performed it and who conducted that specific performance.",
-			"App is 100% responsive across all platforms, and is optimized to for social media sharing"
-		],
-		"other_features": [
-			"Concerts Calendar",
-			"RSVP to concerts",
-			"Personal concerts archive",
-			"Following artists to get notifications about their concerts"
-		],
-		"note": ""
-	},
-	{
-		"name": "JAMMR",
-		"tag_line": "A Laravel/Livewire project for musicians.",
-		"description": "An application to upload and share music with a unique concept of allowing users to upload versions of the same song, a backend/frontend system that is completely optimized for browser and mobile users. Built using Laravel/VueJs",
-		"featured_image": "/clients/jammr/jammr.png",
-		"screenshots": [
-			"/clients/jammr/jammr_home.png",
-			"/clients/jammr/jammr_track.png"
-		],
-		"slug": "jammr",
-		"tech_used": [
-			"Laravel",
-			"Livewire",
-			"AlpineJs"
-		],
-		"details": [
-			"Jammr is a unique concept that allows musicians to upload their own music for others to listen and remix.",
-			"The infrastructure was built to allow an artist to either upload an entire complete song or to upload the individual tracks that makes a song, which allows other artists to use specific instruments in their mixes or to remix the entire song.",
-			"Built with swappable storage in mind, meaning you can use local storage for upload or any other object storage (i.e. amazon s3 bucket)",
-			"Implemented a custom js audio player to control playback",
-			"Users can follow their favorite creators"
-		],
-		"other_features": [
-			"Upload audio files",
-			"Ability to use an object storage or local uploads",
-			"Follow creators to get notifications about their uploads"
-		],
-		"note": ""
-	},
-	{
-		"name": "EEWW eComm Platform",
-		"tag_line": "Highly customizable ecommerce platform",
-		"description": "A Customizable eCommerce platform, with support for user roles and permissions, built with Laravel and VueJs and a backend built with Livewire.",
-		"featured_image": "/clients/ecomm/ecomm.png",
-		"screenshots": [
-			"/clients/ecomm/ecomm_admin.png",
-			"/clients/ecomm/ecomm_roles.png",
-			"/clients/ecomm/ecomm_stats.png"
-		],
-		"slug": "eeww-ecomm",
-		"tech_used": [
-			"Laravel",
-			"VueJs",
-			"Livewire"
-		],
-		"details": [
-			"Built specifically to suite almost all types of products, can be customized to add any amount of categories and products",
-			"Admin panel built with Livewire to allow for rapid filtration and fast access",
-			"Admin panel supports roles and permissions, Admins can add teams to manage all sections (like delivery and product management)",
-			"Quick Stock previews and updates",
-			"Ability to add specific delivery areas with difference delivery rates",
-			"Orders management and filtration"
-		],
-		"other_features": [
-			"Admins quick stats",
-			"Roles and permissions",
-			"Filter orders by any parameter",
-			"Filter products by any parameter"
-		],
-		"note": ""
-	},
-	{
-		"name": "Ezz Egypt",
-		"tag_line": "A unique business to business ecommerce platform.",
-		"description": "A complete api backend that supports a range of frontend technologies. a unique eCommerce application based on the business 2 business module. frontend built using Laravel blade and VueJs and the backend is a Laravel api",
-		"featured_image": "/clients/ezzegypt/ezze.png",
-		"screenshots": [
-			"/clients/ezzegypt/ezz_header.png",
-			"/clients/ezzegypt/ezz_product.png"
-		],
-		"slug": "ezz-egypt",
-		"tech_used": [
-			"Laravel",
-			"VueJs",
-			"Tailwind"
-		],
-		"details": [
-			"App allows factories and shops and service sellers to offer their products to individuals and businesses.",
-			"Backend built with scaling in mind, app can be deployed on any size server",
-			"App includes very complex forms that allows sellers to properly display their products",
-			"Admin can require sellers to prove their tax identity and registration",
-			"App has a language switcher and offer arabic/english versions with proper name values",
-			"App is 100% responsive for all platforms and also is optimized for all social media sharers"
-		],
-		"other_features": [
-			"Image Uploads",
-			"A language switcher",
-			"Admin approval for new vendors",
-			"Features ads"
-		],
-		"note": ""
-	},
-	{
-		"name": "Game Case",
-		"tag_line": "A Dynamic gaming news app.",
-		"description": "News articles frontend Vue js app, pulling data from an external news api",
-		"featured_image": "/clients/gcase/gcase.png",
-		"screenshots": [
-			"/clients/gcase/gcase_hero.png",
-			"/clients/gcase/gcase_articles.png"
-		],
-		"slug": "game-case",
-		"tech_used": [
-			"VueJs",
-			"Axios",
-			"Tailwind"
-		],
-		"details": [
-			"Built to be deployed on any html host to avoid renting an entire server",
-			"Makes use of Axios to fetch news from a few news sources"
-		],
-		"other_features": [
-			"One click deploy on any cloud host, like netlify or heroku",
-			"Entirely processed on the browser",
-			"100% Responsive"
-		],
-		"note": ""
-	},
-	{
-		"name": "A. Ezz El-Arab Legal Accountants",
-		"tag_line": "Static html profile",
-		"description": "A static portfolio website using VueJs",
-		"featured_image": "/clients/aezz/aezz.png",
-		"screenshots": [
-			"/clients/aezz/aezz_body.png"
-		],
-		"slug": "a-ezz-accountants",
-		"tech_used": [
-			"VueJs",
-			"Tailwind"
-		],
-		"details": [
-			"Built to be deployed on any html host to avoid renting an entire server",
-			"Optimized to work with social media sharers"
-		],
-		"other_features": [
-			"One click deploy on any cloud host, like netlify or heroku",
-			"Entirely processed on the browser",
-			"100% Responsive"
-		],
-		"note": ""
-	},
-	{
-		"name": "ITAP Paints",
-		"tag_line": "Static html profile",
-		"description": "A static website that showcases the company's profile and services using VueJs",
-		"featured_image": "/clients/itap/itap.png",
-		"screenshots": [
-			"/clients/itap/itap_body.png"
-		],
-		"slug": "itap",
-		"tech_used": [
-			"VueJs",
-			"Vue Router",
-			"Tailwind"
-		],
-		"details": [
-			"Built to be deployed on any html host to avoid renting an entire server",
-			"Optimized to work with social media sharers"
-		],
-		"other_features": [
-			"One click deploy on any cloud host, like netlify or heroku",
-			"Entirely processed on the browser",
-			"100% Responsive"
-		],
-		"note": ""
-	},
-	{
-		"name": "Al Nour Trading",
-		"tag_line": "Static html profile",
-		"description": "A simple static website profile using bootstrap4.",
-		"featured_image": "/clients/nour/nour.png",
-		"screenshots": [
-			"/clients/nour/nour_body.png"
-		],
-		"slug": "al-nour",
-		"tech_used": [
-			"VueJs",
-			"Vue Router",
-			"Bootstrap"
-		],
-		"details": [
-			"Built to be deployed on any html host to avoid renting an entire server",
-			"Optimized to work with social media sharers"
-		],
-		"other_features": [
-			"One click deploy on any cloud host, like netlify or heroku",
-			"Entirely processed on the browser",
-			"100% Responsive"
-		],
-		"note": ""
-	}
+  {
+    "name": "Andalusia CMS",
+    "urls": [
+		"https://andalusiahj.com",
+		"https://www.alw-sa.com"
+	],
+    "tag_line": "A massive Nuxt 2 project.",
+    "description": "A unique idea to use dynamic imports deploy more than website using the same codebase, all with different custom designs and different backends",
+    "featured_image": "/clients/nuxt2-cms/cms1.webp",
+    "screenshots": [
+      "/clients/nuxt2-cms/cms1.webp",
+      "/clients/nuxt2-cms/cms2.webp",
+      "/clients/nuxt2-cms/cms3.webp",
+      "/clients/nuxt2-cms/cms4.webp"
+    ],
+    "slug": "andalusia-nuxt-2",
+    "tech_used": [
+      "Nuxt 2",
+      "Vue 2",
+      "Tailwind"
+    ],
+    "details": [
+      "Idea came from the need to have an easily maintainable codebase for the business's websites.",
+      "Idea is to rely on dynamic imports along with minimal input from Environment variables to decide which content/design is loaded and which backend api to call.",
+      "Closely follow Adobe XD/Figma designs to implement the UI/UX",
+      "Challenges included eliminating redundant and over engineered code, Deliver performant and easily scalable codebase.",
+      "Adhere to the SEO standards while using meta info coming from the back."
+    ],
+    "other_features": [
+      "Customized component per entity",
+      "Dynamically render menus based on backend configs",
+      "Access middleware to block disabled pages without manually remove code"
+    ],
+    "note": "Manually carried out a few rounds of refactors/updates and optimizations to ensure that the solution is not using ancient unsupported software."
+  },
+  {
+    "name": "TVShowSeeker",
+    "urls": ["https://tvshowseeker.com"],
+    "tag_line": "A massive Laravel/Vue/Redis project.",
+    "description": "A complete backend/frontend build, a web app built using Laravel/VueJs/Redis, fully responsive and based on an api",
+    "featured_image": "/clients/seeker/seek.png",
+    "screenshots": [
+      "/clients/seeker/seeker_show.png",
+      "/clients/seeker/seeker_related_tags.png",
+      "/clients/seeker/seeker_episodes.png"
+    ],
+    "slug": "tvshowseeker",
+    "tech_used": [
+      "Laravel",
+      "Vue 3",
+      "Tailwind",
+      "Redis"
+    ],
+    "details": [
+      "A very fun project that i worked on from start to finish, TVShowSeeker used an external api source to seed information about tv shows.",
+      "I used a laravel custom console command along with a cronjob to ensure continues seeding to make sure the local database is never out of date.",
+      "Users can follow their favorite shows and through an algorithm i determine their missed episodes and present it in an organized queue.",
+      "To ensure the app is always fast i implemented a background queue worker to constantly check the users episodes queue, and then cache it using Redis.",
+      "Latest iteration of frontend updates included separating the desktop and the mobile layout, to make sure the browsing experience is optimal and streamlined regardless of the platform.",
+      "Latest iteration of the frontend updates followed the progressive web app specifications to make sure the website is installable through browsers."
+    ],
+    "other_features": [
+      "Recommended tv shows",
+      "Watched episodes time tracker",
+      "Episodes calendar",
+      "New seasons notifications",
+      "Custom collage background images generated from the users own favorite tv show posters."
+    ],
+    "note": "Ever since the app launch back in 2016, it went through a major backend upgrade and 2 minor style upgrades. All carried out by me."
+  },
+  {
+    "name": "Cairo Symphony Guide",
+    "urls": null,
+    "tag_line": "The definitive directory for all things Cairo Symphony.",
+    "description": "Separate frontend and backends, a VueJs app using a Laravel backend api. implemented an image upload system using an external service for maximum optimization",
+    "featured_image": "/clients/csg/csg.png",
+    "screenshots": [
+      "/clients/csg/csg_calendar.png",
+      "/clients/csg/csg_concert.png"
+    ],
+    "slug": "cairo-symphony-guide",
+    "tech_used": [
+      "Laravel",
+      "VueJs",
+      "Cloudinary"
+    ],
+    "details": [
+      "The idea of this app is to have an accurate directory to track everything related to the Cairo Symphony.",
+      "Users are able to follow performers and conductors and specific musical works so they get notifications when it is being performed in future concerts.",
+      "The app has an integration with the Cloudinary Api which makes uploading poster/profile images very optimized.",
+      "The app includes a complete list of every concert that was performed in the last few years. along with all related information.",
+      "The app makes it very easy to generate analysis and stats regarding what was performed when and who performed it and who conducted that specific performance.",
+      "App is 100% responsive across all platforms, and is optimized to for social media sharing"
+    ],
+    "other_features": [
+      "Concerts Calendar",
+      "RSVP to concerts",
+      "Personal concerts archive",
+      "Following artists to get notifications about their concerts"
+    ],
+    "note": ""
+  },
+  {
+    "name": "JAMMR",
+    "urls": null,
+    "tag_line": "A Laravel/Livewire project for musicians.",
+    "description": "An application to upload and share music with a unique concept of allowing users to upload versions of the same song, a backend/frontend system that is completely optimized for browser and mobile users. Built using Laravel/VueJs",
+    "featured_image": "/clients/jammr/jammr.png",
+    "screenshots": [
+      "/clients/jammr/jammr_home.png",
+      "/clients/jammr/jammr_track.png"
+    ],
+    "slug": "jammr",
+    "tech_used": [
+      "Laravel",
+      "Livewire",
+      "AlpineJs"
+    ],
+    "details": [
+      "Jammr is a unique concept that allows musicians to upload their own music for others to listen and remix.",
+      "The infrastructure was built to allow an artist to either upload an entire complete song or to upload the individual tracks that makes a song, which allows other artists to use specific instruments in their mixes or to remix the entire song.",
+      "Built with swappable storage in mind, meaning you can use local storage for upload or any other object storage (i.e. amazon s3 bucket)",
+      "Implemented a custom js audio player to control playback",
+      "Users can follow their favorite creators"
+    ],
+    "other_features": [
+      "Upload audio files",
+      "Ability to use an object storage or local uploads",
+      "Follow creators to get notifications about their uploads"
+    ],
+    "note": ""
+  },
+  {
+    "name": "EEWW eComm Platform",
+    "urls": null,
+    "tag_line": "Highly customizable ecommerce platform",
+    "description": "A Customizable eCommerce platform, with support for user roles and permissions, built with Laravel and VueJs and a backend built with Livewire.",
+    "featured_image": "/clients/ecomm/ecomm.png",
+    "screenshots": [
+      "/clients/ecomm/ecomm_admin.png",
+      "/clients/ecomm/ecomm_roles.png",
+      "/clients/ecomm/ecomm_stats.png"
+    ],
+    "slug": "eeww-ecomm",
+    "tech_used": [
+      "Laravel",
+      "VueJs",
+      "Livewire"
+    ],
+    "details": [
+      "Built specifically to suite almost all types of products, can be customized to add any amount of categories and products",
+      "Admin panel built with Livewire to allow for rapid filtration and fast access",
+      "Admin panel supports roles and permissions, Admins can add teams to manage all sections (like delivery and product management)",
+      "Quick Stock previews and updates",
+      "Ability to add specific delivery areas with difference delivery rates",
+      "Orders management and filtration"
+    ],
+    "other_features": [
+      "Admins quick stats",
+      "Roles and permissions",
+      "Filter orders by any parameter",
+      "Filter products by any parameter"
+    ],
+    "note": ""
+  },
+  {
+    "name": "Ezz Egypt",
+    "urls": null,
+    "tag_line": "A unique business to business ecommerce platform.",
+    "description": "A complete api backend that supports a range of frontend technologies. a unique eCommerce application based on the business 2 business module. frontend built using Laravel blade and VueJs and the backend is a Laravel api",
+    "featured_image": "/clients/ezzegypt/ezze.png",
+    "screenshots": [
+      "/clients/ezzegypt/ezz_header.png",
+      "/clients/ezzegypt/ezz_product.png"
+    ],
+    "slug": "ezz-egypt",
+    "tech_used": [
+      "Laravel",
+      "VueJs",
+      "Tailwind"
+    ],
+    "details": [
+      "App allows factories and shops and service sellers to offer their products to individuals and businesses.",
+      "Backend built with scaling in mind, app can be deployed on any size server",
+      "App includes very complex forms that allows sellers to properly display their products",
+      "Admin can require sellers to prove their tax identity and registration",
+      "App has a language switcher and offer arabic/english versions with proper name values",
+      "App is 100% responsive for all platforms and also is optimized for all social media sharers"
+    ],
+    "other_features": [
+      "Image Uploads",
+      "A language switcher",
+      "Admin approval for new vendors",
+      "Features ads"
+    ],
+    "note": ""
+  },
+  {
+    "name": "Game Case",
+    "urls": null,
+    "tag_line": "A Dynamic gaming news app.",
+    "description": "News articles frontend Vue js app, pulling data from an external news api",
+    "featured_image": "/clients/gcase/gcase.png",
+    "screenshots": [
+      "/clients/gcase/gcase_hero.png",
+      "/clients/gcase/gcase_articles.png"
+    ],
+    "slug": "game-case",
+    "tech_used": [
+      "VueJs",
+      "Axios",
+      "Tailwind"
+    ],
+    "details": [
+      "Built to be deployed on any html host to avoid renting an entire server",
+      "Makes use of Axios to fetch news from a few news sources"
+    ],
+    "other_features": [
+      "One click deploy on any cloud host, like netlify or heroku",
+      "Entirely processed on the browser",
+      "100% Responsive"
+    ],
+    "note": ""
+  },
+  {
+    "name": "A. Ezz El-Arab Legal Accountants",
+    "urls": null,
+    "tag_line": "Static html profile",
+    "description": "A static portfolio website using VueJs",
+    "featured_image": "/clients/aezz/aezz.png",
+    "screenshots": [
+      "/clients/aezz/aezz_body.png"
+    ],
+    "slug": "a-ezz-accountants",
+    "tech_used": [
+      "VueJs",
+      "Tailwind"
+    ],
+    "details": [
+      "Built to be deployed on any html host to avoid renting an entire server",
+      "Optimized to work with social media sharers"
+    ],
+    "other_features": [
+      "One click deploy on any cloud host, like netlify or heroku",
+      "Entirely processed on the browser",
+      "100% Responsive"
+    ],
+    "note": ""
+  },
+  {
+    "name": "ITAP Paints",
+    "urls": null,
+    "tag_line": "Static html profile",
+    "description": "A static website that showcases the company's profile and services using VueJs",
+    "featured_image": "/clients/itap/itap.png",
+    "screenshots": [
+      "/clients/itap/itap_body.png"
+    ],
+    "slug": "itap",
+    "tech_used": [
+      "VueJs",
+      "Vue Router",
+      "Tailwind"
+    ],
+    "details": [
+      "Built to be deployed on any html host to avoid renting an entire server",
+      "Optimized to work with social media sharers"
+    ],
+    "other_features": [
+      "One click deploy on any cloud host, like netlify or heroku",
+      "Entirely processed on the browser",
+      "100% Responsive"
+    ],
+    "note": ""
+  },
+  {
+    "name": "Al Nour Trading",
+    "urls": null,
+    "tag_line": "Static html profile",
+    "description": "A simple static website profile using bootstrap4.",
+    "featured_image": "/clients/nour/nour.png",
+    "screenshots": [
+      "/clients/nour/nour_body.png"
+    ],
+    "slug": "al-nour",
+    "tech_used": [
+      "VueJs",
+      "Vue Router",
+      "Bootstrap"
+    ],
+    "details": [
+      "Built to be deployed on any html host to avoid renting an entire server",
+      "Optimized to work with social media sharers"
+    ],
+    "other_features": [
+      "One click deploy on any cloud host, like netlify or heroku",
+      "Entirely processed on the browser",
+      "100% Responsive"
+    ],
+    "note": ""
+  }
 ]

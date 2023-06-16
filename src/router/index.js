@@ -11,6 +11,7 @@ import GameCase from "../views/Projects/GameCase.vue"
 import AEzzAccountants from "../views/Projects/AEzzAccountants.vue"
 import Itap from "../views/Projects/Itap.vue"
 import AlNour from "../views/Projects/AlNour.vue"
+import AndalusiaCms2 from "../views/Projects/AndalusiaCms2.vue";
 
 const routes = [
 	{
@@ -27,6 +28,11 @@ const routes = [
 		path: "/projects/tvshowseeker",
 		name: "tvshowseeker",
 		component: TvShowSeeker,
+	},
+	{
+		path: "/projects/andalusia-nuxt-2",
+		name: "andalusia-nuxt-2",
+		component: AndalusiaCms2,
 	},
 	{
 		path: "/projects/cairo-symphony-guide",

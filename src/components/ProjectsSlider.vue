@@ -47,11 +47,22 @@ const options = {
                         </h5>
                         <p class="text-sm text-[#485b73] min-h-[3ch]">{{ client.description }}</p>
                     </div>
-                    <div class="p-4">
+                    <div class="p-4 flex justify-between">
                         <a
                                 :href="'/projects/' + client.slug"
                                 class="btn btn-secondary">
                             More details
+                        </a>
+                        <a
+                                v-if="client.urls"
+                                :href="client.urls[0]"
+                                class="btn inline-flex items-center gap-2 hover:bg-gray-300"
+                                target="_blank"
+                                rel="noopener noreferrer nofollow"
+                        >
+                            Visit
+
+                            <svg class="w-5 h-5 text-gray-700" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M19 19H5V5h7V3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83l1.41 1.41L19 6.41V10h2V3h-7z"/></svg>
                         </a>
                     </div>
                 </div>
