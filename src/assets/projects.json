@@ -1,36 +1,129 @@
 [
   {
-    "name": "Andalusia CMS",
+    "name": "Andalusia Wellness Park",
     "urls": [
-		"https://andalusiahj.com",
-		"https://www.alw-sa.com"
+		"https://www.awpdevelopment.com/"
+	],
+    "tag_line": "Dynamic Nuxt 3 project.",
+    "description": "Use Nuxt 3 to hook up a modern and trendy front ui with a solid laravel backend, where most input was dynamically controller, even small design details.",
+    "featured_image": "/clients/awp/awp1.webp",
+    "screenshots": [
+      "/clients/awp/awp1.webp",
+      "/clients/awp/awp2.webp",
+      "/clients/awp/awp3.webp"
+    ],
+    "slug": "awp",
+    "tech_used": [
+      "Nuxt 3",
+      "Pinia",
+      "Vue 3",
+      "Tailwind"
+    ],
+    "details": [
+      "A company portfolio with a modern design, entirely populated through a cms backend",
+      "Achieve performance metrics and ensure max optimization",
+      "Adhere to the SEO standards while using meta info coming from the backend."
+    ],
+    "other_features": [
+      "Based on a proprietary cms backend, to allow for the shortest delivery cycle",
+      "Dynamically render menus based on backend configs"
+    ],
+    "note": ""
+  },
+  {
+    "name": "Andalusia Women's Health",
+    "urls": [
+		"https://alw-sa.com"
 	],
     "tag_line": "A massive Nuxt 2 project.",
-    "description": "A unique idea to use dynamic imports deploy more than website using the same codebase, all with different custom designs and different backends",
-    "featured_image": "/clients/nuxt2-cms/cms1.webp",
+    "description": "A unique idea to use dynamic imports to deploy more than one website using the same codebase, all with different custom designs and different backends",
+    "featured_image": "/clients/alw-cms/cms1.webp",
     "screenshots": [
-      "/clients/nuxt2-cms/cms1.webp",
-      "/clients/nuxt2-cms/cms2.webp",
-      "/clients/nuxt2-cms/cms3.webp",
-      "/clients/nuxt2-cms/cms4.webp"
+      "/clients/alw-cms/cms1.webp",
+      "/clients/alw-cms/cms2.webp",
+      "/clients/alw-cms/cms4.webp"
     ],
-    "slug": "andalusia-nuxt-2",
+    "slug": "alw-cms",
     "tech_used": [
       "Nuxt 2",
       "Vue 2",
       "Tailwind"
     ],
     "details": [
-      "Idea came from the need to have an easily maintainable codebase for the business's websites.",
-      "Idea is to rely on dynamic imports along with minimal input from Environment variables to decide which content/design is loaded and which backend api to call.",
+      "Idea came from the need to have an easily maintainable codebase for the business' websites.",
+      "Concept is to rely on dynamic imports along with minimal input from Environment variables to decide which content/design is loaded and which backend api to call.",
       "Closely follow Adobe XD/Figma designs to implement the UI/UX",
       "Challenges included eliminating redundant and over engineered code, Deliver performant and easily scalable codebase.",
-      "Adhere to the SEO standards while using meta info coming from the back."
+      "Adhere to the SEO standards while using meta info coming from the backend."
     ],
     "other_features": [
-      "Customized component per entity",
+      "Customized components per entity",
       "Dynamically render menus based on backend configs",
-      "Access middleware to block disabled pages without manually remove code"
+      "Access middleware to block disabled pages without manually removing code"
+    ],
+    "note": "Manually carried out a few rounds of refactors/updates and optimizations to ensure that the solution is not using ancient unsupported software."
+  },
+  {
+    "name": "Andalusia Hospital",
+    "urls": [
+		"https://andalusiahj.com/"
+	],
+    "tag_line": "A massive Nuxt 2 project.",
+    "description": "A unique idea to use dynamic imports to deploy more than one website using the same codebase, all with different custom designs and different backends",
+    "featured_image": "/clients/hjh-cms/cms1.webp",
+    "screenshots": [
+      "/clients/hjh-cms/cms1.webp",
+      "/clients/hjh-cms/cms2.webp"
+    ],
+    "slug": "hjh-cms",
+    "tech_used": [
+      "Nuxt 2",
+      "Vue 2",
+      "Tailwind"
+    ],
+    "details": [
+      "Idea came from the need to have an easily maintainable codebase for the business' websites.",
+      "Concept is to rely on dynamic imports along with minimal input from Environment variables to decide which content/design is loaded and which backend api to call.",
+      "Closely follow Adobe XD/Figma designs to implement the UI/UX",
+      "Challenges included eliminating redundant and over engineered code, Deliver performant and easily scalable codebase.",
+      "Adhere to the SEO standards while using meta info coming from the backend."
+    ],
+    "other_features": [
+      "Customized components per entity",
+      "Dynamically render menus based on backend configs",
+      "Access middleware to block disabled pages without manually removing code"
+    ],
+    "note": "Manually carried out a few rounds of refactors/updates and optimizations to ensure that the solution is not using ancient unsupported software."
+  },
+  {
+    "name": "Andalusia Kids Wellness",
+    "urls": [
+		"https://www.andalusiackw.com/"
+	],
+    "tag_line": "A massive Nuxt 2 project.",
+    "description": "A unique idea to use dynamic imports to deploy more than one website using the same codebase, all with different custom designs and different backends",
+    "featured_image": "/clients/akw-cms/akw2.webp",
+    "screenshots": [
+      "/clients/akw-cms/akw1.webp",
+      "/clients/akw-cms/akw2.webp"
+    ],
+    "slug": "akw-cms",
+    "tech_used": [
+      "Nuxt 2",
+      "Vue 2",
+      "Tailwind"
+    ],
+    "details": [
+      "Idea came from the need to have an easily maintainable codebase for the business' websites.",
+      "Concept is to rely on dynamic imports along with minimal input from Environment variables to decide which content/design is loaded and which backend api to call.",
+      "Closely follow Adobe XD/Figma designs to implement the UI/UX",
+      "Challenges included eliminating redundant and over engineered code, Deliver performant and easily scalable codebase.",
+      "Adhere to the SEO standards while using meta info coming from the backend."
+    ],
+    "other_features": [
+      "Customized components per entity",
+      "Dynamically render menus based on backend configs",
+      "Access middleware to block disabled pages without manually removing code"
     ],
     "note": "Manually carried out a few rounds of refactors/updates and optimizations to ensure that the solution is not using ancient unsupported software."
   },

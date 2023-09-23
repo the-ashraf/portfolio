@@ -11,7 +11,10 @@ import GameCase from "../views/Projects/GameCase.vue"
 import AEzzAccountants from "../views/Projects/AEzzAccountants.vue"
 import Itap from "../views/Projects/Itap.vue"
 import AlNour from "../views/Projects/AlNour.vue"
-import AndalusiaCms2 from "../views/Projects/AndalusiaCms2.vue";
+import AlwCms from "../views/Projects/AlwCms.vue";
+import HjhCms from "../views/Projects/HjhCms.vue";
+import AkwCms from "../views/Projects/AkwCms.vue";
+import Awp from "../views/Projects/Awp.vue";
 
 const routes = [
 	{
@@ -30,9 +33,24 @@ const routes = [
 		component: TvShowSeeker,
 	},
 	{
-		path: "/projects/andalusia-nuxt-2",
-		name: "andalusia-nuxt-2",
-		component: AndalusiaCms2,
+		path: "/projects/awp",
+		name: "awp",
+		component: Awp,
+	},
+	{
+		path: "/projects/alw-cms",
+		name: "alw-cms",
+		component: AlwCms,
+	},
+	{
+		path: "/projects/hjh-cms",
+		name: "hjh-cms",
+		component: HjhCms,
+	},
+	{
+		path: "/projects/akw-cms",
+		name: "akw-cms",
+		component: AkwCms,
 	},
 	{
 		path: "/projects/cairo-symphony-guide",
