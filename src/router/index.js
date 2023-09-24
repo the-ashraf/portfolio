@@ -15,6 +15,8 @@ import AlwCms from "../views/Projects/AlwCms.vue";
 import HjhCms from "../views/Projects/HjhCms.vue";
 import AkwCms from "../views/Projects/AkwCms.vue";
 import Awp from "../views/Projects/Awp.vue";
+import Aes from "../views/Projects/Aes.vue";
+import Aha from "../views/Projects/Aha.vue";
 
 const routes = [
 	{
@@ -33,9 +35,19 @@ const routes = [
 		component: TvShowSeeker,
 	},
 	{
+		path: "/projects/aha",
+		name: "aha",
+		component: Aha,
+	},
+	{
 		path: "/projects/awp",
 		name: "awp",
 		component: Awp,
+	},
+	{
+		path: "/projects/aes",
+		name: "aes",
+		component: Aes,
 	},
 	{
 		path: "/projects/alw-cms",

@@ -1,5 +1,35 @@
 [
   {
+    "name": "Andalusia Health Academy",
+    "urls": null,
+    "tag_line": "Nuxt 3 educational platform",
+    "description": "Use Nuxt 3 to build a performant learning platform where students can enroll in physical and online courses as well as register to attend educational conferences",
+    "featured_image": "/clients/aha/aha1.webp",
+    "screenshots": [
+      "/clients/aha/aha1.webp",
+      "/clients/aha/aha4.webp",
+      "/clients/aha/aha2.webp",
+      "/clients/aha/aha3.webp"
+    ],
+    "slug": "aha",
+    "tech_used": [
+      "Nuxt 3",
+      "Pinia",
+      "Vue 3",
+      "Tailwind"
+    ],
+    "details": [
+      "Huge filtration system that ensures users can filter courses using different inputs, while maintaining search and pagination states",
+      "Performant web-app, fully optimized and follows all the SEO standards",
+      "Use conditional rendering to optimize for mobile performance"
+    ],
+    "other_features": [
+      "Based on a proprietary cms backend, to allow for the shortest delivery cycle",
+      "Dynamic SEO inputs allows admins to customize presence"
+    ],
+    "note": ""
+  },
+  {
     "name": "Andalusia Wellness Park",
     "urls": [
 		"https://www.awpdevelopment.com/"
@@ -64,36 +94,34 @@
     "note": "Manually carried out a few rounds of refactors/updates and optimizations to ensure that the solution is not using ancient unsupported software."
   },
   {
-    "name": "Andalusia Hospital",
+    "name": "Andalusia Engineering Services",
     "urls": [
-		"https://andalusiahj.com/"
-	],
-    "tag_line": "A massive Nuxt 2 project.",
-    "description": "A unique idea to use dynamic imports to deploy more than one website using the same codebase, all with different custom designs and different backends",
-    "featured_image": "/clients/hjh-cms/cms1.webp",
-    "screenshots": [
-      "/clients/hjh-cms/cms1.webp",
-      "/clients/hjh-cms/cms2.webp"
+      "https://andalusiaengineering.com"
     ],
-    "slug": "hjh-cms",
+    "tag_line": "Dynamic Nuxt 3 project.",
+    "description": "Use Nuxt 3 to hook up a modern and trendy front ui with a solid laravel backend, where most input was dynamically controller, even small design details.",
+    "featured_image": "/clients/aes/aes1.webp",
+    "screenshots": [
+      "/clients/aes/aes1.webp",
+      "/clients/aes/aes2.webp"
+    ],
+    "slug": "aes",
     "tech_used": [
-      "Nuxt 2",
-      "Vue 2",
+      "Nuxt 3",
+      "Pinia",
+      "Vue 3",
       "Tailwind"
     ],
     "details": [
-      "Idea came from the need to have an easily maintainable codebase for the business' websites.",
-      "Concept is to rely on dynamic imports along with minimal input from Environment variables to decide which content/design is loaded and which backend api to call.",
-      "Closely follow Adobe XD/Figma designs to implement the UI/UX",
-      "Challenges included eliminating redundant and over engineered code, Deliver performant and easily scalable codebase.",
+      "A company portfolio with a modern design, entirely populated through a cms backend",
+      "Achieve performance metrics and ensure max optimization",
       "Adhere to the SEO standards while using meta info coming from the backend."
     ],
     "other_features": [
-      "Customized components per entity",
-      "Dynamically render menus based on backend configs",
-      "Access middleware to block disabled pages without manually removing code"
+      "Based on a proprietary cms backend, to allow for the shortest delivery cycle",
+      "Dynamically render menus based on backend configs"
     ],
-    "note": "Manually carried out a few rounds of refactors/updates and optimizations to ensure that the solution is not using ancient unsupported software."
+    "note": ""
   },
   {
     "name": "Andalusia Kids Wellness",
