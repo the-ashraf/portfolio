@@ -1,5 +1,39 @@
 [
   {
+    "name": "DotCare CMS",
+    "urls": null,
+    "tag_line": "An ACL driven admin panel",
+    "description": "A robust and versatile admin panel designed to streamline and simplify complex administrative tasks. With a user-friendly interface and a powerful permission system.",
+    "featured_image": "/clients/dotcare/dotcare1.webp",
+    "screenshots": [
+      "/clients/dotcare/dotcare2.webp",
+      "/clients/dotcare/dotcare3.webp",
+      "/clients/dotcare/dotcare4.webp",
+      "/clients/dotcare/dotcare1.webp"
+    ],
+    "slug": "dotcare-cms",
+    "tech_used": [
+      "Nuxt 2",
+      "Vue 2",
+      "Vuetify",
+      "Tailwind"
+    ],
+    "details": [
+      "Role-based access control (RBAC) to assign predefined roles to users, simplifying the permission setup process.",
+      "Define and manage user access levels with precision. Create role-based permissions that determine which screens and features are accessible, editable, or deletable for each user or group.",
+      "A sleek and intuitive interface makes navigating the admin panel a breeze. Users will appreciate the clean design and easy-to-use controls, reducing the learning curve.",
+      "Over 30 screens that cover a wide range of administrative tasks. From user management to data analysis.",
+      "To ensure the app is always fast i implemented a background queue worker to constantly check the users episodes queue, and then cache it using Redis.",
+      "Designed to scale with new business and new connected websites."
+    ],
+    "other_features": [
+      "Authentication, and authorization features",
+      "Comprehensive Screen Library",
+      "Intuitive User Interface"
+    ],
+    "note": "DotCare CMS represents a culmination of meticulous development, where I, as the lead developer, personally led a series of substantial refactoring efforts. These efforts were undertaken to streamline and expedite the process of adding new screens and features. As a result, the admin panel is not only feature-rich but also highly adaptable, ensuring that future enhancements and expansions can be seamlessly integrated. My commitment to optimizing the development workflow has paved the way for a more agile and responsive admin panel that can evolve alongside your organization's needs."
+  },
+  {
     "name": "Andalusia Health Academy",
     "urls": null,
     "tag_line": "Nuxt 3 educational platform",

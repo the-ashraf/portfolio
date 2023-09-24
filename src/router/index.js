@@ -14,6 +14,7 @@ import AlNour from "../views/Projects/AlNour.vue"
 import AlwCms from "../views/Projects/AlwCms.vue";
 import HjhCms from "../views/Projects/HjhCms.vue";
 import AkwCms from "../views/Projects/AkwCms.vue";
+import DotCareCms from "../views/Projects/DotCareCms.vue";
 import Awp from "../views/Projects/Awp.vue";
 import Aes from "../views/Projects/Aes.vue";
 import Aha from "../views/Projects/Aha.vue";
@@ -33,6 +34,11 @@ const routes = [
 		path: "/projects/tvshowseeker",
 		name: "tvshowseeker",
 		component: TvShowSeeker,
+	},
+	{
+		path: "/projects/dotcare-cms",
+		name: "dotcare-cms",
+		component: DotCareCms,
 	},
 	{
 		path: "/projects/aha",
