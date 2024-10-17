@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&family=Poppins:wght@300;400;500;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.hero {
+	background-image: url('./assets/stars.svg'), linear-gradient(135deg, #204666, #22313f);
+	background-size: contain, auto;
+	background-position: 50%, 100%;
+}
+
+@layer components {
+  .btn {
+    @apply inline-block font-medium text-center whitespace-nowrap align-middle select-none border border-transparent py-3 px-6 text-sm leading-[1.8] rounded-[4px] transition ease-in-out duration-150;
+  }
+
+  .btn-primary {
+    @apply text-[#dcf6fd] bg-[#485b73] border-[#485B73] hover:bg-[#485B73]/90 hover:border-[#485B73]/90;
+  }
+
+  .btn-secondary {
+    @apply text-[#212529] bg-[#f9bf3b] border-[#F9BF3B] hover:bg-[#F9BF3B]/90 hover:border-[#F9BF3B]/90;
+  }
+}
