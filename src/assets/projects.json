@@ -1,5 +1,150 @@
 [
   {
+    "name": "Saya Insurance Broker Public Website",
+    "urls": null,
+    "tag_line": "Nuxt3 car insurance platform",
+    "description": "Developed a public-facing website for end users to browse and purchase car insurance plans based on specific criteria and requirements.",
+    "featured_image": "/clients/saya/saya_1.webp",
+    "screenshots": [
+      "/clients/saya/saya_1.webp",
+      "/clients/saya/saya_2.webp",
+      "/clients/saya/saya_3.webp",
+      "/clients/saya/saya_4.webp",
+      "/clients/saya/saya_5.webp"
+    ],
+    "slug": "saya-public",
+    "tech_used": [
+      "Nuxt 3",
+      "Pinia",
+      "Tailwind"
+    ],
+    "details": [
+      "Developed a public-facing website that allows end users to browse and purchase car insurance plans based on specific criteria and requirements.",
+      "Implemented OTP-based passwordless authentication for enhanced security and user experience.",
+      "Built a user-friendly multi-step wizard to guide users through the insurance purchasing process."
+    ],
+    "other_features": [
+      "Multi-Language (i18n) supported",
+      "Dynamic Forms"
+    ],
+    "note": ""
+  },
+  {
+    "name": "Satrans Web CMS and Tickets Booking System",
+    "urls": [
+      "https://satrans.com.sa"
+    ],
+    "tag_line": "Complete CMS and ticket booking system",
+    "description": "Developed a CMS and ticket booking system allowing users to manage their trips, payments, and tickets while ensuring accessibility and SEO best practices.",
+    "featured_image": "/clients/satrans/sat_web_1.webp",
+    "screenshots": [
+      "/clients/satrans/sat_web_1.webp",
+      "/clients/satrans/sat_web_2.webp",
+      "/clients/satrans/sat_web_3.webp",
+      "/clients/satrans/sat_web_3.webp"
+    ],
+    "slug": "satrans-cms",
+    "tech_used": [
+      "NextJs",
+      "RTKQ",
+      "Tailwind"
+    ],
+    "details": [
+      "Enabled users to book tickets, manage trips, make payments, and handle cancellations or refunds.",
+      "Ensured CMS and booking server separation for reliability and uptime.",
+      "Highly optimized for SEO and accessibility.",
+      "Dynamic Metadata to allow admins to generate SEO optimized pages."
+    ],
+    "other_features": [
+      "Dynamic Content Management",
+      "Highly Configurable"
+    ],
+    "note": ""
+  },
+  {
+    "name": "Saya Car Insurance Broker Admin Panel",
+    "urls": null,
+    "tag_line": "Internal admin panel for managing insurance plans",
+    "description": "Developed an admin panel for administrators to efficiently add and manage car insurance plans based on various criteria.",
+    "featured_image": "/clients/saya/saya_admin_1.webp",
+    "screenshots": [
+      "/clients/saya/saya_admin_1.webp",
+      "/clients/saya/saya_admin_2.webp",
+      "/clients/saya/saya_admin_3.webp"
+    ],
+    "slug": "saya-admin",
+    "tech_used": [
+      "Nuxt 3",
+      "Pinia"
+    ],
+    "details": [
+      "Implemented a unified criteria system to manage complex insurance requirements.",
+      "Built a custom dynamic datatable engine and reusable forms with validation."
+    ],
+    "other_features": [
+      "System Wide Notifications"
+    ],
+    "note": ""
+  },
+  {
+    "name": "Elsewedy Original Authenticator",
+    "urls": null,
+    "tag_line": "Internal sticker authentication system",
+    "description": "Developed a secure system for tracking and managing the status of authentication stickers to detect authentic or fraudulent purchases.",
+    "featured_image": "/clients/elsewedy/authenticator_1.webp",
+    "screenshots": [
+      "/clients/elsewedy/authenticator_1.webp",
+      "/clients/elsewedy/authenticator_2.webp",
+      "/clients/elsewedy/authenticator_3.webp"
+    ],
+    "slug": "elsewedy-authenticator",
+    "tech_used": [
+      "Nuxt 3",
+      "Pinia",
+      "Vuetify"
+    ],
+    "details": [
+      "Built and maintained a secure system with ACL to manage access to pages and features.",
+      "Dynamic forms and tables for easy data management and tracking.",
+      "Implemented custom barcode scanner inputs for quick and easy verification."
+    ],
+    "other_features": [
+      "Heatmap for scans",
+      "Dashboard for stats and analytics"
+    ],
+    "note": ""
+  },
+  {
+    "name": "Satrans Tickets Reservation Dashboard",
+    "urls": null,
+    "tag_line": "Internal admin dashboard for ticket reservations",
+    "description": "Developed an internal admin panel for managing CMS pages, ticket reservations, and trip-related functionalities for Satrans.",
+    "featured_image": "/clients/satrans/sat_admin_1.webp",
+    "screenshots": [
+      "/clients/satrans/sat_admin_1.webp",
+      "/clients/satrans/sat_admin_2.webp",
+      "/clients/satrans/sat_admin_3.webp",
+      "/clients/satrans/sat_admin_4.webp"
+    ],
+    "slug": "satrans-admin",
+    "tech_used": [
+      "React",
+      "Tailwind",
+      "Stimulsoft"
+    ],
+    "details": [
+      "Implemented an advanced Access Control List (ACL) system for role-based permissions.",
+      "Developed features for ticket issuance, tracking, reporting, and trip management.",
+      "Integrated Stimulsoft for generating and exporting reports.",
+      "Customized dynamic forms and tables for efficient data management."
+    ],
+    "other_features": [
+      "Advanced filtering system.",
+      "Reusable templates."
+    ],
+    "note": ""
+  },
+  {
     "name": "DotCare CMS",
     "urls": null,
     "tag_line": "An ACL driven admin panel",
@@ -66,8 +211,8 @@
   {
     "name": "Andalusia Wellness Park",
     "urls": [
-		"https://www.awpdevelopment.com/"
-	],
+      "https://www.awpdevelopment.com/"
+    ],
     "tag_line": "Dynamic Nuxt 3 project.",
     "description": "Use Nuxt 3 to hook up a modern and trendy front ui with a solid laravel backend, where most input was dynamically controller, even small design details.",
     "featured_image": "/clients/awp/awp1.webp",
@@ -97,8 +242,8 @@
   {
     "name": "Andalusia Women's Health",
     "urls": [
-		"https://alw-sa.com"
-	],
+      "https://alw-sa.com"
+    ],
     "tag_line": "A massive Nuxt 2 project.",
     "description": "A unique idea to use dynamic imports to deploy more than one website using the same codebase, all with different custom designs and different backends",
     "featured_image": "/clients/alw-cms/cms1.webp",
@@ -160,8 +305,8 @@
   {
     "name": "Andalusia Kids Wellness",
     "urls": [
-		"https://www.andalusiackw.com/"
-	],
+      "https://www.andalusiackw.com/"
+    ],
     "tag_line": "A massive Nuxt 2 project.",
     "description": "A unique idea to use dynamic imports to deploy more than one website using the same codebase, all with different custom designs and different backends",
     "featured_image": "/clients/akw-cms/akw2.webp",
@@ -191,7 +336,9 @@
   },
   {
     "name": "TVShowSeeker",
-    "urls": ["https://tvshowseeker.com"],
+    "urls": [
+      "https://tvshowseeker.com"
+    ],
     "tag_line": "A massive Laravel/Vue/Redis project.",
     "description": "A complete backend/frontend build, a web app built using Laravel/VueJs/Redis, fully responsive and based on an api",
     "featured_image": "/clients/seeker/seek.png",

@@ -18,6 +18,11 @@ import DotCareCms from "../views/Projects/DotCareCms.vue";
 import Awp from "../views/Projects/Awp.vue";
 import Aes from "../views/Projects/Aes.vue";
 import Aha from "../views/Projects/Aha.vue";
+import SayaPublic from "../views/Projects/SayaPublic.vue";
+import SayaAdmin from "../views/Projects/SayaAdmin.vue";
+import ElsewedyAuthenticator from "../views/Projects/ElsewedyAuthenticator.vue";
+import SatransCms from "../views/Projects/SatransCms.vue";
+import SatransAdmin from "../views/Projects/SatransAdmin.vue";
 
 const routes = [
 	{
@@ -34,6 +39,31 @@ const routes = [
 		path: "/projects/tvshowseeker",
 		name: "tvshowseeker",
 		component: TvShowSeeker,
+	},
+	{
+		path: "/projects/satrans-admin",
+		name: "satrans-admin",
+		component: SatransAdmin,
+	},
+	{
+		path: "/projects/satrans-cms",
+		name: "satrans-cms",
+		component: SatransCms,
+	},
+	{
+		path: "/projects/elsewedy-authenticator",
+		name: "elsewedy-authenticator",
+		component: ElsewedyAuthenticator,
+	},
+	{
+		path: "/projects/saya-admin",
+		name: "saya-admin",
+		component: SayaAdmin,
+	},
+	{
+		path: "/projects/saya-public",
+		name: "saya-public",
+		component: SayaPublic,
 	},
 	{
 		path: "/projects/dotcare-cms",
