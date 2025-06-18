@@ -1,5 +1,36 @@
 [
   {
+    "name": "ELKawetchagy/Fit&Fix eCommerce",
+    "urls": null,
+    "tag_line": "Nuxt 3 eCommerce platform",
+    "description": "Highly optimized e-commerce platform with Nuxt 3, delivering a lightning-fast user experience through advanced caching strategies for backend calls.",
+    "featured_image": "/clients/kawetchagy/kawetchagy_1.webp",
+    "screenshots": [
+      "/clients/kawetchagy/kawetchagy_1.webp",
+      "/clients/kawetchagy/kawetchagy_2.webp",
+      "/clients/kawetchagy/kawetchagy_3.webp",
+      "/clients/kawetchagy/kawetchagy_4.webp"
+    ],
+    "slug": "kawetchagy",
+    "tech_used": [
+      "Nuxt 3",
+      "LRU-Cache",
+      "Pinia",
+      "Tailwind"
+    ],
+    "details": [
+      "Developed a high-performance e-commerce platform with Nuxt 3, featuring a streamlined product catalog and secure passwordless authentication.",
+      "Implemented robust caching for API calls and utilized optimized images and bundle sizing to ensure a fast and responsive user experience.",
+      "Integrated a seamless payment gateway, completing the end-to-end shopping flow from Browse to checkout."
+    ],
+    "other_features": [
+      "Dynamic Filters based on product attributes",
+      "Multi-Language (i18n) supported",
+      "Dynamic Forms"
+    ],
+    "note": ""
+  },
+  {
     "name": "Saya Insurance Broker Public Website",
     "urls": null,
     "tag_line": "Nuxt3 car insurance platform",
